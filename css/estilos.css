@@ -1,0 +1,243 @@
+body {
+
+  background-color: black;
+  font-family: "Dancing Script";
+  width: 100%;
+}
+
+img{
+  box-shadow: 2px 0 #02010a;
+}
+
+@media (min-width:900px){
+
+  .contenido{
+    width: 900px;
+    margin-left: 20%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header h1{
+    text-align: left;
+    padding-left: 2%;
+    text-shadow: 2px 2px 2px #02010a;
+  }
+  ul{
+    text-align: right;
+  }
+
+  .ImagenSecundaria {
+    display: flex;
+    flex-direction: row wrap;
+  }
+
+  .piePagina{
+    display: flex;
+    flex-direction: row wrap;
+  }
+
+  .galeria {
+    display: flex;
+    flex-direction: row wrap;
+}
+
+  #imagen1 {
+  width: 60%;
+  padding: 4% 20%;
+  }
+
+  #imagen2 {
+    border: 1px;
+    height: 50%;
+    width: 50%;
+    margin-top: 5%;
+    padding: 20px;
+  }
+
+  #imagen3 {
+    border: 1px;
+    height: 50%;
+    width: 50%;
+    margin-top: 5%;
+    padding: 20px;
+  }
+
+  #imagen1blur, #imagen2gris, #imagen3sepia {
+    padding: 20px;
+  }
+  #imagen4gris, #imagen5, #imagen6gris {
+    padding: 20px;
+  }
+
+  .c1 {
+    padding: 0 3%;
+    width: 25%;
+    text-align: left;
+  }
+  .c2 {
+    padding: 0 3%;
+    width: 25%;
+    text-align: left;
+  }
+  .c3 {
+    padding: 0 3%;
+    width: 25%;
+    text-align: left;
+  }
+  .c4{
+    padding: 0 3%;
+    width: 25%;
+    text-align: left;
+  }
+
+  .columna1 {
+    width: 33.33%;
+  }
+  .columna2 {
+    width: 33.33%;
+  }
+  .columna3 {
+    width: 33.33%;
+  }
+}
+
+@media (max-width:899px) {
+
+  .contenido{
+    display: -webkit-flex;
+  	display: flex;
+    flex-direction: -webkit-column;
+    flex-direction: column;
+    width: 100%;
+  }
+  header h1{
+    text-align: center;
+    text-shadow: 2px 2px 2px #02010a;
+  }
+  ul{
+    text-align: center;
+  }
+
+  #imagen1{
+    width: 85%;
+    padding: 6% 0% 6% 6%;
+  }
+
+  #imagen2{
+    width: 85%;
+    padding: 6% 0% 3% 6%;
+  }
+
+  #imagen3 {
+    width: 85%;
+    padding: 3% 0% 6% 6%;
+  }
+
+  .galeria img{
+    width: 85%;
+  }
+
+  #imagen1blur {
+    padding: 6% 0% 2% 8%;
+  }
+
+  #imagen2gris, #imagen3sepia, #imagen4gris, #imagen5, #imagen6gris {
+    padding: 3% 0% 2% 8%;
+  }
+
+  footer {
+  padding: 10px 0px 10px 20px;
+  }
+}
+
+header{
+  background-color:#5b7989;
+  border-radius: 10px 10px 0 0;
+  color: white;
+  width: 100%;
+  animation: miSlideIn 1s;
+}
+
+@-webkit-keyframes miSlideIn{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+
+#menu-principal a:visited {
+	text-decoration: none;
+}
+
+ul{
+  font-size: 1.3em;
+}
+
+ul li{
+  display: inline;
+  padding: 2%;
+}
+
+ul li a{
+  color: white;
+}
+
+
+.ImagenCentral{
+  background-color: #82c3a6;
+  width: 100%;
+}
+
+.ImagenSecundaria{
+  background-color: #d5c75f;
+  width: 100%;
+  border: 1px;
+  text-align: center;
+}
+
+#imagen3 img:hover{
+  transform: translate(-5px,-20px);
+  border: 2px;
+  box-shadow: #82c3a6;
+}
+
+#imagen2 img:hover{
+  transform: rotate(10deg);
+  border: 2px;
+  box-shadow: #82c3a6;
+}
+
+footer{
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  background-color: #C6d5c5;
+}
+.redesSociales, .redes{
+  display: block;
+  text-align: left;
+}
+
+.galeria{
+  background-color: #d5c75f;
+  width: 100%;
+}
+
+
+#imagen1blur img{
+  -webkit-filter: blur(10px);
+	filter: blur(10px);
+}
+
+#imagen2gris, #imagen4gris, #imagen6gris {
+  filter: grayscale(100%);
+}
+
+#imagen3sepia{
+  filter: sepia(90%);
+}
